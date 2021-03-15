@@ -1,7 +1,6 @@
 function descendingOrder(n){
-    let reversed = Number(n.toString().split('').reverse().join('')); 
-    console.log(reversed)
+    return Number(n.toString().split('').reverse().join('')); 
+
   }
 
-  
-  descendingOrder(1234)
+  descendingOrder(4545);
