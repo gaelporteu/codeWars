@@ -1,6 +1,3 @@
 function descendingOrder(n){
-    console.log(n.reverse());
-   }
-   
-   
-   descendingOrder(123456789);
+    return Number(n.toString().split('').reverse().join('')); 
+  }
