@@ -1,3 +1,4 @@
 function printerError(s) {
-    // your code
+  // using regex to accept only letters a-z
+  return `${s.replace(/[a-m]/gi, "").length}/${s.length}`;
 }
