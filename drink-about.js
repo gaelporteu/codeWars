@@ -17,3 +17,18 @@
 // 18 --> "drink beer"
 // 20 --> "drink beer"
 // 30 --> "drink whisky"
+
+function peopleWithAgeDrink(age) {
+    if (age < 14) {
+        return 'drink toddy';
+    } else if (age > 13 && age < 18) {
+        return 'drink coke';
+    } else if (age > 17 && age < 21) {
+        return 'drink beer';
+    } else if (age > 21) {
+        return 'drink whisky';
+    } else {
+        return 'drink whisky'
+    }
+  };
+  console.log(peopleWithAgeDrink(undefined));
