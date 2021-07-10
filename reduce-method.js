@@ -32,7 +32,7 @@ console.log(array1.reduce(theAmazingAns));
 
 // Leon's code
 const sumEvenOrOdd = arr => arr.reduce((a, c) => a + c, 0) %
-2 ? 'odd' : 'even';
+2 === 0 ? 'even' : 'odd';
 
 console.log(sumEvenOrOdd([0, 1, 4]));
 console.log(sumEvenOrOdd([0, -1, -5]));
