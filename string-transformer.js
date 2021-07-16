@@ -50,3 +50,22 @@ function upperToLower (str) {
   
   console.log(upperToLower("Example Input"), "iNPUT eXAMPLE")
   console.log(upperToLower("Hello joB"), "hello joB")
+
+
+  // option 2
+  function stringTransformer(s) {
+    return s.replace(/./g,m=>m.toUpperCase()==m?m.toLowerCase():m.toUpperCase()).split(' ').reverse().join(' ')
+  }
+
+  // option 3
+  function stringTransformer(str) {
+    let words = str.split(' ').reverse();
+    let chars = words.join(' ').split('');
+    let returnString = '';
+    
+    chars.forEach((char) => {
+      returnString += (char == char.toUpperCase()) ? char.toLowerCase() : char.toUpperCase();
+    });
+    
+    return returnString;
+  }
