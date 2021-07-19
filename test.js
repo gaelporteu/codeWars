@@ -116,3 +116,46 @@ console.log(fruit === fruitbear) ; // return true
 
 fruit.name = 'grape';
 console.log(fruitbear); // output: { name: "grape" }, instead of { name: "apple" }
+
+
+const array = ["r", "e", "t", "u", "p", "m", "o", "c" ]
+
+console.log(array.reverse());
+console.log(array.join(""));
+
+let string = "tnellecxe";
+console.log(string.split("").reverse().join("")) 
+
+let today = "Today work Great";
+console.log(today.split(" ").reverse().join(" "))
+
+// pop(remove element from end), shift(removing from start of array), 
+// push(add to end), unshift(add to beginning)
+
+let anotherArray = ["one", "two", "three", "four", "five"]
+const element = anotherArray.shift()
+console.log(anotherArray)
+console.log(element)
+
+anotherArray.unshift("one")
+console.log(anotherArray)
+const element2 = anotherArray.pop()
+console.log(anotherArray)
+anotherArray.push("five")
+console.log(element2)
+console.log(anotherArray)
+
+//charAt returns the character at an index
+let position = "I want to search for position in this string"
+console.log(position.charAt(15)) 
+
+//indexOf returns the index of a character
+console.log(position.indexOf("in", 30))
+
+// lastIndexOf returns the index of the last occurance of the character, counts right to left
+console.log(position.lastIndexOf("in"))
+
+let moreStrings = "I am going to go to sleep after this."
+
+console.log(moreStrings.lastIndexOf("g"))
+
